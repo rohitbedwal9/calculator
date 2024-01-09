@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Basic Calculator </title>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./script.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+      integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+      integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   
+   <div class="container">
+      <form name="forms">
+         <input type="text" id="result" class="display" placeholder="0" />
+         <div class="btns">
+            <input type="button" onclick="dis(7)" onkeydown="myFunction(event)" id="seven" value="7">
+            <input type="button" onclick="dis(8)" onkeydown="myFunction(event)" id="eight" value="8">
+            <input type="button" onclick="dis(9)" onkeydown="myFunction(event)" id="nine" value="9">
+            <input type="button" onclick="dis('/')" onkeydown="myFunction(event)" id="divide" value="/"><br>
+            <input type="button" onclick="dis(4)" onkeydown="myFunction(event)" id="four" value="4">
+            <input type="button" onclick="dis(5)" onkeydown="myFunction(event)" id="five" value="5">
+            <input type="button" onclick="dis(6)" onkeydown="myFunction(event)" id="six" value="6">
+            <input type="button" onclick="dis('*')" onkeydown="myFunction(event)" id="multi" value="x"><br>
+            <input type="button" onclick="dis(1)" onkeydown="myFunction(event)" id="one" value="1">
+            <input type="button" onclick="dis(2)" onkeydown="myFunction(event)" id="two" value="2">
+            <input type="button" id="three" onkeydown="myFunction(event)" onclick="dis(3)" value="3">
+            <input type="button" id="subs" onkeydown="myFunction(event)" onclick="dis('-')" value="-"><br>
+            <input type="button" id="clear" onkeydown="myFunction(event)" onclick="clr()" value="C">
+            <input type="button" id="dot" onkeydown="myFunction(event)" onclick="dis('.')" value=".">
+            <input type="button" id="zero" onkeydown="myFunction(event)" onclick="dis(0)" value="0">
+            <input type="button" id="add" onkeydown="myFunction(event)" onclick="dis('+')" value="+"><br>
+            <input type="button" id="equal" onkeydown="myFunction(event)" onclick="solve()" value="=">
+         </div>
+      </form>
+   </div>
+</body>
+
+</html>
